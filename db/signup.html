@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<head>
+<link rel="icon" href="3.png">
+<script>
+function submit(){
+if(form1.username.value == '' || form1.password.value == ''){
+	alert('All field is compulsory');
+	return;
+}
+window.location="jay.html";
+}
+</script>
+<title>LOGIN PAGE</title>
+<link rel="stylesheet" type="text/css" href="sign.css" />
+</head>
+<body>
+<div class="container">
+	<section id="content">
+		<form action="" name="form1">
+			<h1>Login Form</h1>
+			<div>
+				<input type="text" placeholder="Username" required="" id="username" />
+			</div>
+			<div>
+				<input type="password" placeholder="Password" required="" id="password" />
+			</div>
+			<div>
+				
+				<a onclick="submit()"><p class="demo">LOGIN</p></a></br>
+				<p class="links"><a href="#">Lost your password?</a></p>
+			</div>
+		</form><!-- form -->
+	</section><!-- content -->
+</div><!-- container -->
+</body>
+</html>
